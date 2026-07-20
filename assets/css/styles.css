@@ -394,6 +394,10 @@ img {
   box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.5);
   transition: box-shadow 0.4s;
 }
+.projects_data {
+  padding: 0.85rem 1rem 1rem;
+  background-color: var(--container-color);
+}
 .projects_img {
   width: 100%;
   aspect-ratio: 16 / 10;
@@ -404,31 +408,86 @@ img {
   padding: 1rem;
   color: var(--first-color);
 }
-.projects_data {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: hsla(var(--hue), 8%, 8%, 0.4);
-  backdrop-filter: blur(16px);
-  display: grid;
-  place-content: center;
-  row-gap: 0.5rem;
-  text-align: center;
-  padding: 0 1rem;
-  border-radius: 1rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s;
+.using{
+  font-size: var(--small-font-size);
 }
+
 .projects_title,
 .project_title {
-  font-size: var(--h3-font-size);
+  margin: 0 0 0.75rem;
+  min-height: 2.8em;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-size: clamp(0.82rem, 2.5vw, var(--normal-font-size));
+  line-height: 1.4;
 }
 .projects_description,
 .project-description {
-  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  min-height: 1.75rem;
+  margin: 0;
+  font-size: var(--font-medium);
+}
+
+.project-description i {
+  font-size: 1.35rem;
+}
+
+.project-description .fa-html5 {
+  color: #e34f26;
+}
+
+.project-description .fa-css3-alt {
+  color: #1572b6;
+}
+
+.project-description .fa-bootstrap {
+  color: #7952b3;
+}
+
+.project-description .fa-js {
+  color: #f7df1e;
+}
+
+.project-description .fa-react {
+  color: #61dafb;
+}
+
+.project-description .ri-tailwind-css-fill {
+  color: #38bdf8;
+}
+
+.design-logo {
+  display: inline-grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid currentColor;
+  border-radius: 0.2rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.photoshop-logo {
+  color: #31a8ff;
+}
+
+.illustrator-logo {
+  color: #ff9a00;
+}
+
+.graphic-design-title {
+  margin-top: 3rem;
+}
+
+.tech-label {
+  font-size: clamp(0.65rem, 2vw, 0.85rem);
+  color: var(--gray-color);
 }
 
 .projects_card:hover .projects_data {
