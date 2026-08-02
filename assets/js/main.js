@@ -34,7 +34,7 @@ const typedHome = new Typed('#home-typed', {
    backSpeed: 40,
    backDelay: 2000,
    loop: true,
-   cursorChar: '|'
+   cursorChar: '_'
 });
 
 /*=============== ADD SHADOW HEADER ===============*/
